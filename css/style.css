@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Baloo 2', cursive;
+}
+
+.container{
+	display: inline-block;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+	width: 200px;
+	display: inline-block;
+
+	border-radius: 15px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+	margin: 15px;
+
+	transition: transform 0.15s ease-in;
+
+}
+
+.card:hover{
+	transform: translateY(-15px) scale(1.05);
+}
+
+
+.card img{
+	width: 200px;
+	background: gray;
+	border-radius: 15px 15px 0 0;
+}
+
+.card .pokeType{
+	padding: 0 20px;
+	color: gray;
+	font-size: medium;
+}
+
+.card .pokeName{
+	padding: 0 20px;
+	font-size: larger;
+}
+
+.card .pokeInfo {
+	margin: 0 20px 10px 20px;
+	line-height: 17px;
+}
